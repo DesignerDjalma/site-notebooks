@@ -27,7 +27,7 @@
     width: fit-content;
     /* background-color: rgba(238, 130, 238, 0.185); */
 }
-@media (max-width: 420px){
+@media (max-width: 460px){
     .wrapper{
         display: inline;    
     }
