@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./icones.css">
+
     <script defer src="./darkmode.js"></script>
 </head>
 <body>
@@ -60,22 +61,25 @@
                             <div id="produto-notebook-descricao" class="pdesc">
 
                                 <!-- Paragrafos <p> da Lista de Item: Descrição -->
-                                <p>SCR: 15.6" LED IPS FHD</p>
-                                <p>CPU:  Intel® Core™ i5 12ªgen</p>
-                                <p>RAM: 8 GB DDR4</p>
-                                <p>SSD: 512 GB nVME2</p>
-                                <p>GPU: Intel® Iris® Xe</p>
-                                <p>CAM: 720p HD</p>
-                                <p>ETC: US MIL-STD 810H</p>
-                                <p>SO: Windows 11</p>
-
+                                <p id="note-desc-scr">SCR: 15.6" LED IPS FHD</p>
+                                <p id="note-desc-cpu">CPU:  Intel® Core™ i5 12ªgen</p>
+                                <p id="note-desc-ram">RAM: 8 GB DDR4</p>
+                                <p id="note-desc-ssd">SSD: 512 GB nVME2</p>
+                                <p id="note-desc-gpu">GPU: Intel® Iris® Xe</p>
+                                <p id="note-desc-cam">CAM: 720p HD</p>
+                                <p id="note-desc-etc">ETC: US MIL-STD 810H</p>
+                                <p id="note-desc-so">SO: Windows 11</p>
                             </div>
                             <div class="preco">
                                 <h6>A partir de</h6>
 
                                 <!-- Aqui vai ficar o preco -->
                                 <h3 id="produto-notebook-preco">R$ 99.999,99</h3>
-                                <button>COMPRAR</button>
+                                
+                                <div class="botao-comprar">
+                                    <button class="button-85" role="button">COMPRAR</button>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
