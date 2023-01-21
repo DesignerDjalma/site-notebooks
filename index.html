@@ -6,99 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josiele's Shopping Notebook Choises!</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./icones.css">
-
+    <link rel="stylesheet" href="./style.css">
     <script defer src="./darkmode.js"></script>
 </head>
 <body>
-    <header class="cabecalho">
+    <header id="home" class="cabecalho">
         <nav class="navegacao">
             <ul class="ulist">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">Notebooks</a></li>
+                <li><a href="#notebooks-expo">Notebooks</a></li>
                 <li><a href="#links-relacionados">Links</a></li>
             </ul>
             <ul class="ulist centralizar">
                 <li>
-                    <button id="btn-troca-tema">
+                    <button id="btn-troca-tema" onclick="trocarTema()">
                         <i class="gg-edit-contrast"></i>
                     </button>
                 </li>
             </ul>
-
         </nav>
     </header>
-    <main class="container">
-       
 
+    <main class="container">
+
+        <!-- Mesagem de Boas-Vindas! -->
         <article>
             <h1>Bem vindo(a) 👋</h1>
             <p>Apresentando os melhores notebooks  custo benefício para se comprar em .</p>
         </article>
-        <hr>
-        <h1>💻 Notes até 4k 💸</h1>
-        <section>
 
-            <!-- Aqui que vai vir o JavaScript para fazer meus posts de Notebook automaticamente -->
-            <!-- # modelo -->
+        <!--  -->
+        <!-- Aqui que vai vir o JavaScript para fazer meus posts de Notebook automaticamente -->
+        <section id="notebooks-expo">
+            <hr>
+            <h1>💻 Notes até 4k 💸</h1>
             <article class="item-notebook">
-                
+             
+    
                 <!-- Nome do Notebook de Forma Abreveada -->
-                <h2 id="produto-notebook-nome" class="centralizar">Notebook ASUS Vivobook</h2>
-
+                <h2 class="produto-notebook-nome" class="centralizar">Notebook ASUS Vivobook</h2>
+            
+            
                 <div class="notebook-capa-e-textos">
-                    <div class="notebook-1st">
+                    <div class="notebook-capa">
                         <div class="centralizar">
-
+            
+            
                              <!-- Aqui vem aquela imagem bonita transparente -->
-                            <img id="produto-notebook-imagem-url" class="centralizar" src="https://br.store.asus.com/media/catalog/product/cache/80ca4d3b08020b5abcd9abd5d305c273/v/i/vivobook-15_x1502_m1502_product-photo_1s_icelight-silver_07_1_1_1_1.png" alt="">
+                            <img class="produto-notebook-imagem-url" class="centralizar" src="https://br.store.asus.com/media/catalog/product/cache/80ca4d3b08020b5abcd9abd5d305c273/v/i/vivobook-15_x1502_m1502_product-photo_1s_icelight-silver_07_1_1_1_1.png" alt="Imagem do Notebook que está a ser vendido">
                         
+            
                         </div>
                     </div>
                     <div class="preco-e-descrica centralizar">
                         <div class="wrapper">
-                            <div id="produto-notebook-descricao" class="pdesc">
-
+                            <div class="produto-notebook-descricao" class="pdesc">
+            
+            
                                 <!-- Paragrafos <p> da Lista de Item: Descrição -->
-                                <p id="note-desc-scr">SCR: 15.6" LED IPS FHD</p>
-                                <p id="note-desc-cpu">CPU:  Intel® Core™ i5 12ªgen</p>
-                                <p id="note-desc-ram">RAM: 8 GB DDR4</p>
-                                <p id="note-desc-ssd">SSD: 512 GB nVME2</p>
-                                <p id="note-desc-gpu">GPU: Intel® Iris® Xe</p>
-                                <p id="note-desc-cam">CAM: 720p HD</p>
-                                <p id="note-desc-etc">ETC: US MIL-STD 810H</p>
-                                <p id="note-desc-so">SO: Windows 11</p>
+                                <p class="note-desc-scr">SCR: 15.6" LED IPS FHD</p>
+                                <p class="note-desc-cpu">CPU: Intel® Core™ i5 12ªgen</p>
+                                <p class="note-desc-ram">RAM: 8 GB DDR4</p>
+                                <p class="note-desc-ssd">SSD: 512 GB nVME2</p>
+                                <p class="note-desc-gpu">GPU: Intel® Iris® Xe</p>
+                                <p class="note-desc-cam">CAM: 720p HD</p>
+                                <p class="note-desc-etc">ETC: US MIL-STD 810H</p>
+                                <p class="note-desc-so">SO: Windows 11</p>
+            
+            
                             </div>
                             <div class="preco">
                                 <h6>A partir de</h6>
-
+            
+            
                                 <!-- Aqui vai ficar o preco -->
-                                <h3 id="produto-notebook-preco">R$ 99.999,99</h3>
+                                <h3 class="produto-notebook-preco">
+                                    R$ 99.999,99
+                                </h3>
                                 
+            
                                 <div class="botao-comprar">
                                     <button class="button-85" role="button">COMPRAR</button>
                                 </div>
-                                
+            
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
-
         </section>
+        <!-- fim do javascript que vai fazer todos os notebooks -->
+        <!--  -->
+    
     </main>
+
+
+
     <aside id="links-relacionados">
         <h2 class="centralizar">Links Relacionados</h2>
             <div class="centralizar">
-                <ul>
-                    <li><a href="https://www.americanas.com.br/mapa-do-site">Lojas Americanas</a></li>
-                    <li><a href="https://www.magazineluiza.com.br/">Magazine Luiza </a></li>
-                </ul>
-                <ul>
-                    <li><a href="">Pichau Informática</a></li>
-                    <li><a href="">Belém Informática</a></li>
-                </ul>
+                <ul><li><a target="_blank" href="https://www.americanas.com.br/">Lojas Americanas</a></li>
+                    <li><a target="_blank" href="https://www.magazineluiza.com.br/">Magazine Luiza </a></li></ul>
+                <ul><li><a target="_blank" href="https://www.pichau.com.br/">Pichau Informática</a></li>
+                    <li><a target="_blank" href="https://www.intersol.com.br/">Sol Informática</a></li></ul>
             </div>
     </aside>
     <footer class="centralizar">

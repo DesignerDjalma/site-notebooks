@@ -17,11 +17,16 @@
     justify-content: space-between;
 }
 
+#btn-troca-tema{
+    background-color: #ffffff00;
+    border-width: 0px;
+}
+
 .ulist{
     gap: 30px;
 }
 
-.notebook-1st img{
+.notebook-capa img{
     width: 440px;
     /* background-color: rgba(255, 235, 205, 0.185); */
 }
@@ -61,9 +66,10 @@
     /* background-color: rgba(255, 228, 196, 0.349); */
 }
 
-#produto-notebook-preco {
-    text-align: right;
+.produto-notebook-preco {
     background-color: rgb(236, 70, 100);
+    color: aliceblue;
+    text-align: right;
     padding-left: 20px;
     padding-right: 5px;
     /* background-color: rgba(255, 228, 196, 0.349); */
