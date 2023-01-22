@@ -1,33 +1,32 @@
-function trocarTema (btn){
+// function trocarTema (btn){
 
-    let temaAtual;
-    let novoTema;
+//     let temaAtual;
+//     let novoTema;
 
-    temaAtual = document.documentElement.getAttribute("data-theme");
+//     temaAtual = document.documentElement.getAttribute("data-theme");
     
-    novoTema = (temaAtual === "light") ? "dark" : "light";
+//     novoTema = (temaAtual === "light") ? "dark" : "light";
 
-    console.log("Ah")
+//     console.log("Ah")
 
 
-    if (btn.classList.value === "invert-false"){
-        console.log("True")
-        btn.classList.remove("invert-false")
-        btn.classList.add( "invert-true")
-    } else {
-        console.log("False")
+//     if (btn.classList.value === "invert-false"){
+//         console.log("True")
+//         btn.classList.remove("invert-false")
+//         btn.classList.add( "invert-true")
+//     } else {
+//         console.log("False")
 
-        btn.classList.add("invert-false")
-        btn.classList.remove( "invert-true")
-    }
+//         btn.classList.add("invert-false")
+//         btn.classList.remove( "invert-true")
+//     }
 
-    document.documentElement.setAttribute("data-theme", novoTema);
+//     document.documentElement.setAttribute("data-theme", novoTema);
 
-}
+// }
 
-function trocarTemaFancy (thisBtn){
+function trocarTemaFancy (){
 
-    // let btn = thisBtn;
     let btn = document.getElementById("btn-troca-tema");
     let temaAtual;
     let novoTema;
@@ -52,3 +51,4 @@ function trocarTemaFancy (thisBtn){
 
 }
 
+trocarTemaFancy()

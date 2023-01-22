@@ -78,7 +78,8 @@ const dados = {
                         "SO: Linux"
                     ]
                 }
-            }
+            },
+            
         ]
     },
     "notebooks_gamer":{
