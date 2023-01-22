@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,13 +14,14 @@
     <header id="home" class="cabecalho">
         <nav class="navegacao">
             <ul class="ulist">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#notebooks-expo">Notebooks</a></li>
+                <li><a href="#" onclick="window.location.assign('./index.html')">Inicio</a></li>
+                <li><a href="#" onclick="window.location.assign('./notebooks.html')">Notebooks</a></li>
+                <li><a href="#" onclick="window.location.assign('./formularioPreencher.html')">Cadastrar</a></li>
                 <li><a href="#links-relacionados">Links</a></li>
             </ul>
             <ul class="ulist centralizar">
                 <li>
-                    <button id="btn-troca-tema" class="invert-true" onclick="trocarTemaFancy(this)">
+                    <button id="btn-troca-tema" class="invert-false" onclick="trocarTemaFancy(this)">
                         <i class="gg-moon"></i>
                     </button>
                 </li>
@@ -35,10 +36,7 @@
             <h1>Bem vindo(a) 👋</h1>
             <p>Apresentando os melhores notebooks  custo benefício para se comprar em .</p>
         </article>
-
-        <div id="exibir-notebooks-por-categoria">
-        </div>
-    
+   
     </main>
 
 
@@ -56,9 +54,6 @@
         
         <p>Copyright ©2023 @3Djhey</p>
     </footer>
-    
-    <!-- Script responsavel por Popular o Cardapio com os items que vem de dentro de um Objeto -->
-    <script src="./criarCardNotebook.js"></script>
 
 </body>
 </html>

@@ -6,117 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-        }
-        .meuFormulario{
-            height: 200px;
-            width: 500px;
-        }
-    </style>
+    <title>Cadastrar Notebook</title>
+
 </head>
+
 <body>
-    <div class="meuFormulario">
-        
-        <h1>Cadastrar Notebook</h1>
-        <!-- 1 -->
-        <form onsubmit="submitForm(); return false;">
-            <h3>Informações Gerais</h3>
-            <select id="titulo" name="titulo" required>
-                <option value="1">💻 Notes até 4k 💸</option>
-                <option value="2">💻 Notes Gamer RGB 👾</option>
-            </select>
+    <header id="home" class="cabecalho">
+        <nav class="navegacao">
+            <ul class="ulist">
+                <ul class="ulist">
+                    <li><a href="#" onclick="window.location.assign('./index.html')">Inicio</a></li>
+                    <li><a href="#" onclick="window.location.assign('./notebooks.html')">Notebooks</a></li>
+                    <li><a href="#" onclick="window.location.assign('./formularioPreencher.html')">Cadastrar</a></li>
+                    <li><a href="#links-relacionados">Links</a></li>
+                </ul>
+            </ul>
+            <ul class="ulist centralizar">
+                <li>
+                    <button id="btn-troca-tema" class="invert-false" onclick="trocarTemaFancy(this)">
+                        <i class="gg-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header> 
 
-            <h3>Especificações</h3>
-            <div>
-                <label for="nome_completo">Nome completo do Notebook (Opcional):</label>
-                <input type="text" id="nome_completo" name="nome_completo">
-            </div>
-            <div>
-                <label for="nome">Nome notebook:</label>
-                <input type="text" id="nome" name="nome">
-            </div>
-            <div>
-                <label for="preco">Preço:</label>
-                <input type="text" id="preco" name="preco">
-            </div>
-            <div>
-                <label for="site">Site:</label>
-                <select id="titulo" name="site" required>
-                    <option value="Magazine Luiza">Magazine Luiza</option>
-                    <option value="Casas Bahia">Casas Bahia</option>
-                    <option value="Ponto Frio">Ponto Frio</option>
-                    <option value="Ricardo Eletro">Ricardo Eletro</option>
-                    <option value="Submarino">Submarino</option>
-                    <option value="Americanas">Americanas</option>
-                    <option value="Extra">Extra</option>
-                    <option value="Walmart">Walmart</option>
-                    <option value="Carrefour">Carrefour</option>
-                    <option value="Fast Shop">Fast Shop</option>
-                </select>
-            </div>
+    <main class="container">
+
+        <!-- Mesagem de Boas-Vindas! -->
+        <article>
             
-            <div>
-                <label for="comprar_link">Link para comprar:</label>
-                <input type="text" id="comprar_link" name="comprar_link">
-            </div>
-            <div>
-                <label for="capa_img_link">Link para imagem da capa:</label>
-                <input type="text" id="capa_img_link" name="capa_img_link">
+            <div class="meuFormulario">
+            
+                <h1>Cadastrar Notebook</h1>
+                <!-- 1 -->
+                <form onsubmit="submitForm(); return false;">
+                    <h3>Informações Gerais</h3>
+                    <select id="titulo" name="titulo" required>
+                        <option value="1">💻 Notes até 4k 💸</option>
+                        <option value="2">💻 Notes Gamer RGB 👾</option>
+                    </select>
+    
+                    <h3>Especificações</h3>
+                    <div>
+                        <label for="nome_completo">Nome completo do Notebook (Opcional):</label>
+                        <input type="text" id="nome_completo" name="nome_completo">
+                    </div>
+                    <div>
+                        <label for="nome">Nome notebook:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div>
+                        <label for="preco">Preço:</label>
+                        <input type="text" id="preco" name="preco">
+                    </div>
+                    <div>
+    
+                        <label for="site">Site:</label>
+                        <select id="site" name="site" required>
+                            <option value="Apple">Apple</option>
+                            <option value="Asus">Asus</option>
+                            <option value="Casas Bahia">Casas Bahia</option>
+                            <option value="Carrefour">Carrefour</option>
+                            <option value="Kabum">Kabum</option>
+                            <option value="Lojas Americanas">Lojas Americanas</option>
+                            <option value="Magazine Luiza">Magazine Luiza</option>
+                            <option value="Multilaser">Multilaser</option>
+                            <option value="Novo Mundo">Novo Mundo</option>
+                            <option value="Fast Shop">Fast Shop</option>
+                            <option value="Pichau">Pichau</option>
+                            <option value="Positivo">Positivo</option>
+                            <option value="Ponto Frio">Ponto Frio</option>
+                            <option value="Ricardoeletro">Ricardoeletro</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Submarino">Submarino</option>
+                            <option value="Terabyte">Terabyte</option>
+
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="comprar_link">Link para comprar:</label>
+                        <input type="text" id="comprar_link" name="comprar_link">
+                    </div>
+                    <div>
+                        <label for="capa_img_link">Link para imagem da capa:</label>
+                        <input type="text" id="capa_img_link" name="capa_img_link">
+                    </div>
+    
+                    <h3>Mais Detalhes</h3>
+                    <div>
+                        <label for="tela">Tela</label>
+                        <input type="text" id="tela" name="tela" value="TELA: ">
+                    </div>
+                    <div>
+                        <label for="cpu">CPU</label>
+                        <input type="text" id="cpu" name="cpu" value="CPU: ">
+                    </div>
+                    <div>
+                        <label for="ram">RAM</label>
+                        <input type="text" id="ram" name="ram" value="RAM: ">
+                    </div>
+                    <div>
+                        <label for="rom">ROM</label>
+                        <input type="text" id="rom" name="rom" value="SSD: ">
+                    </div>
+                    <div>
+                        <label for="gpu">GPU</label>
+                        <input type="text" id="gpu" name="gpu" value="GPU: ">
+                    </div>
+                    <div>
+                        <label for="cam">Câmera</label>
+                        <input type="text" id="cam" name="cam" value="CAM: ">
+                    </div>
+                    <div>
+                        <label for="so">Sistema Operacional</label>
+                        <select id="so" name="so" required>
+                            <option value="SO: Windows 11">Windows 11</option>
+                            <option value="SO: Windows 10">Windows 10</option>
+                            <option value="SO: Apple">🍎 Apple</option>
+                            <option value="SO: Linux">Linux</option>
+                        </select>
+                    </div>
+                    <div class="centralizar fitar">
+                        <button type="submit">Enviar</button>
+                        <button id="download-btn">Download</button>
+                    </div>
+                </form>
+            
             </div>
 
-            <h3>Mais Detalhes</h3>
-            <div>
-                <label for="tela">Tela</label>
-                <input type="text" id="tela" name="tela" value="TELA: ">
-            </div>
-            <div>
-                <label for="cpu">CPU</label>
-                <input type="text" id="cpu" name="cpu" value="CPU: ">
-            </div>
-            <div>
-                <label for="ram">RAM</label>
-                <input type="text" id="ram" name="ram" value="RAM: ">
-            </div>
-            <div>
-                <label for="rom">ROM</label>
-                <input type="text" id="rom" name="rom" value="SSD: ">
-            </div>
-            <div>
-                <label for="gpu">GPU</label>
-                <input type="text" id="gpu" name="gpu" value="GPU: ">
-            </div>
-            <div>
-                <label for="cam">Câmera</label>
-                <input type="text" id="cam" name="cam" value="CAM: ">
-            </div>
-            <div>
-                <label for="so">Sistema Operacional</label>
-                <input type="text" id="so" name="so" value="SO: ">
-            </div>
-            <div class="centralizar fitar">
-                <button type="submit">Enviar</button>
-                <button id="download-btn">Download</button>
-            </div>
-        </form>
+        </article>
+
     
-    </div>
+    </main>
+
+
+
+    <aside id="links-relacionados">
+        <h2 class="centralizar">Links Relacionados</h2>
+            <div class="centralizar">
+                <ul><li><a target="_blank" href="https://www.americanas.com.br/">Lojas Americanas</a></li>
+                    <li><a target="_blank" href="https://www.magazineluiza.com.br/">Magazine Luiza </a></li></ul>
+                <ul><li><a target="_blank" href="https://www.pichau.com.br/">Pichau Informática</a></li>
+                    <li><a target="_blank" href="https://www.intersol.com.br/">Sol Informática</a></li></ul>
+            </div>
+    </aside>
+    <footer class="centralizar">
+        
+        <p>Copyright ©2023 @3Djhey</p>
+    </footer>
+
+</body>
+
 <script>
 
     function submitForm() {
 
-        let downloadBtn = document.getElementById("download-btn");
-        downloadBtn.addEventListener("click", function() {
-            let dataUri = "data:application/json;charset=utf-8," + JSON.stringify(formData);
-            let exportFileDefaultName = "data.json";
-            let linkElement = document.createElement("a");
-            linkElement.setAttribute("href", dataUri);
-            linkElement.setAttribute("download", exportFileDefaultName);
-            linkElement.click();
-        });
+        
         var formData = {
             "titulo": document.getElementById("titulo").value,
             "titulo_safe": (document.getElementById("titulo").value === "1") ? "notes4k" : "notesGamer",
@@ -138,6 +185,17 @@
                 }
             }]
         };
+        
+        let downloadBtn = document.getElementById("download-btn");
+        downloadBtn.addEventListener("click", function() {
+            let dataUri = "data:application/json;charset=utf-8," + JSON.stringify(formData);
+            let exportFileDefaultName = "data.json";
+            let linkElement = document.createElement("a");
+            linkElement.setAttribute("href", dataUri);
+            linkElement.setAttribute("download", exportFileDefaultName);
+            linkElement.click();
+        });
+
         console.log(JSON.stringify(formData));
         alert(JSON.stringify(formData));
 
