@@ -36,20 +36,16 @@ function trocarTemaFancy (thisBtn){
     
     novoTema = (temaAtual === "light") ? "dark" : "light";
 
-    console.log("Ah")
-
-
-    if (btn.classList.value === "invert-false"){
-        console.log("True")
-        btn.classList.remove("invert-false")
-        btn.classList.add( "invert-true")
-        btn.innerHTML = `<i class="gg-moon"></i>`
-    } else {
-        console.log("False")
-
+    if (temaAtual === "light"){
+        novoTema = "dark"
         btn.classList.add("invert-false")
         btn.classList.remove( "invert-true")
         btn.innerHTML = `<i class="gg-sun"></i>`
+    } else {
+        novoTema = "light"
+        btn.classList.remove("invert-false")
+        btn.classList.add( "invert-true")
+        btn.innerHTML = `<i class="gg-moon"></i>`
     }
 
     document.documentElement.setAttribute("data-theme", novoTema);

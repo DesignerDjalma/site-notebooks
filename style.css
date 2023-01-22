@@ -8,6 +8,11 @@
     filter: invert(1);
  }
 
+.fitar{
+    margin: 10px;
+    gap: 20px;
+}
+
 .centralizar{
     display: flex;
     align-items: center;
@@ -32,6 +37,7 @@
 .ulist{
     gap: 30px;
 }
+
 
 .notebook-capa img{
     width: 440px;
