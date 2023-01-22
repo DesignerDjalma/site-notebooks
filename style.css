@@ -2,13 +2,12 @@
     --corIcones: white;
 }
 
-.detalhes {
 
 
-    background-color: #ff00c83b;
-
+.sumario {
+    background-color: #0000ff00;
+    width: fit-content;
 }
-
 .lista {
     display: inline;
 }
@@ -16,15 +15,13 @@
     width: fit-content;
     height: fit-content;
 }
-.teste {
-    background-color: #002aff8a;
-    height: 50px;
-    width: 50px;
+.btn-menu {
+    /* background-color: #00000063; */
+    height: 40px;
+    width: 40px;
 }
 
-header {
-    height: 190px;
-}
+
 
 nav {
     /* background-color: #851e6b60; */
@@ -39,6 +36,13 @@ nav li{
     height: 45px;
 }
 
+summary {
+    display: flex;
+    background-color: #111;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+}
 .fa {
     display: flex;
     justify-content: center;
@@ -107,9 +111,33 @@ nav li{
 }
 
 .ulist{
+    padding-left: 50px;
     gap: 30px;
 }
 
+.ulist-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .ulist{
+        display: flex;
+        justify-content: left;
+    }
+    .ulist-items{
+        display: block;
+    }
+    .ulist-items li{
+        display: flex;
+        justify-content: left;
+    }
+    header {
+        height: 300px;
+    }
+
+}
 
 .notebook-capa img{
     width: 440px;
@@ -174,8 +202,6 @@ nav li{
 }
 
 @media (min-width: 992px){
-
-    
 
     .notebook-capa-e-textos{
         display: flex;
