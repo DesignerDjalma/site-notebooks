@@ -1,2 +1,0 @@
-# site-notebooks
-site simples

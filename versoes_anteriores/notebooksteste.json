@@ -1,0 +1,51 @@
+
+
+{
+    "notebooks_ate_4k": {
+        "1": {
+            "nome_completo": "Notebook Acer Core i7- 10510U 8GB 512GB SSD Tela 15.6” Linux Aspire 5 A515-54-76NA",
+            "preco": "3599.00",
+            "descricao": {          
+                "cpu":[
+                    "Processador Intel® Core™ i7-10510U cache de 8 M, até 4,90 GHz. Número de núcleos 4. Nº de threads 8",
+                    "Intel® Core™ i7 10ªgen"
+                ],
+                "ram":[
+                    "8 GB DDR4 (4 GB Soldada + 4 GB Módulo) Expansível até 20 GB",
+                    "8 GB DDR4"
+                ],
+                "gpu":[
+                    "Gráficos UHD Intel® para processadores Intel® Core™ da 10ª Geração. Frequência 300 MHz - 1.15 GHz, "
+                ],
+                "so":[
+                    "Linux Endless",
+                    "Linux Endless"
+                ],
+                "tela":[
+                    "",
+                    ""
+                    
+                ],
+                "cam":[
+                    "HD 720p",
+                    "HD 720p"
+                ]
+            },
+        "2": {
+            
+        }
+
+    }
+    },
+    "notebooks_gamer": {
+      "1": {
+        "nome_completo": "Notebook Acer Core i7- 10510U 8GB 512GB SSD Tela 15.6” Linux Aspire 5 A515-54-76NA",
+        "preco": "3599.00",
+        "descricao": [
+          "Processador",
+          "a",
+          "a"
+        ]
+      }
+    }
+  }

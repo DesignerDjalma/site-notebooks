@@ -1,0 +1,68 @@
+{
+    "nome_da_categoria": {
+        "numeracao": {
+            "link-url":"",
+            "nome_completo": "",
+            "preco": "0.00",
+            "descricao": {
+                "cpu":[
+                    "Completo",
+                    "Compacto"
+                ],
+                "ram":[
+                    "Completo",
+                    "Compacto"
+                ],
+                "gpu":[
+                    "Completo",
+                    "Compacto"
+                ],
+                "so":[
+                    "Completo",
+                    "Compacto"
+                ],
+                "tela":[
+                    "Completo",
+                    "Compacto"
+                ],
+                "cam":[
+                    "Completo",
+                    "Compacto"
+                ]
+            }            
+        }
+    }
+}
+
+# NOTEBOOK INDIVIDUAL
+{
+    "link-url":"",
+    "nome_completo": "",
+    "preco": "0.00",
+    "descricao": {
+        "cpu":[
+            "Completo",
+            "Compacto"
+        ],
+        "ram":[
+            "Completo",
+            "Compacto"
+        ],
+        "gpu":[
+            "Completo",
+            "Compacto"
+        ],
+        "so":[
+            "Completo",
+            "Compacto"
+        ],
+        "tela":[
+            "Completo",
+            "Compacto"
+        ],
+        "cam":[
+            "Completo",
+            "Compacto"
+        ]
+    }            
+}
