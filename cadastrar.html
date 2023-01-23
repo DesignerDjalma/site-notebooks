@@ -234,4 +234,52 @@
         </div>
     </footer>
 </body>
+<script>
+
+    function submitForm() {
+
+        
+        var formData = {
+            "titulo": document.getElementById("titulo").value,
+            "titulo_safe": (document.getElementById("titulo").value === "1") ? "notes4k" : "notesGamer",
+            "notebooks": [{
+                "nome_completo": document.getElementById("nome_completo").value,
+                "nome": document.getElementById("nome").value,
+                "preco": document.getElementById("preco").value,
+                "site": document.getElementById("site").value,
+                "comprar_link": document.getElementById("comprar_link").value,
+                "capa_img_link": document.getElementById("capa_img_link").value,
+                "descricao": {
+                   "tela": [document.getElementById("tela").value,document.getElementById("tela").value],
+                    "cpu": [document.getElementById("cpu" ).value,document.getElementById("cpu" ).value],
+                    "ram": [document.getElementById("ram" ).value,document.getElementById("ram" ).value],
+                    "rom": [document.getElementById("rom" ).value,document.getElementById("rom" ).value],
+                    "gpu": [document.getElementById("gpu" ).value,document.getElementById("gpu" ).value],
+                    "cam": [document.getElementById("cam" ).value,document.getElementById("cam" ).value],
+                     "so": [document.getElementById("so"  ).value,document.getElementById("so"  ).value]
+                }
+            }]
+        };
+        
+        let downloadBtn = document.getElementById("download-btn");
+        downloadBtn.addEventListener("click", function() {
+            let dataUri = "data:application/json;charset=utf-8," + JSON.stringify(formData);
+            let exportFileDefaultName = "data.json";
+            let linkElement = document.createElement("a");
+            linkElement.setAttribute("href", dataUri);
+            linkElement.setAttribute("download", exportFileDefaultName);
+            linkElement.click();
+        });
+
+        console.log(JSON.stringify(formData));
+        alert(JSON.stringify(formData));
+
+        
+    // Aqui você pode enviar o objeto JSON para o servidor ou fazer outra coisa com ele
+}
+
+    
+    
+
+</script>
 </html>
