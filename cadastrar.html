@@ -127,23 +127,24 @@
     
                         <label for="site">Site:</label>
                         <select id="site" name="site" required>
-                            <option value="Apple">Apple</option>
-                            <option value="Asus">Asus</option>
-                            <option value="Casas Bahia">Casas Bahia</option>
-                            <option value="Carrefour">Carrefour</option>
-                            <option value="Kabum">Kabum</option>
                             <option value="Lojas Americanas">Lojas Americanas</option>
-                            <option value="Magazine Luiza">Magazine Luiza</option>
-                            <option value="Multilaser">Multilaser</option>
-                            <option value="Novo Mundo">Novo Mundo</option>
-                            <option value="Fast Shop">Fast Shop</option>
+                            <option value="Terabyte">Terabyte</option>
                             <option value="Pichau">Pichau</option>
+                            <option value="Kabum">Kabum</option>
+                            <option value="Lenovo">Lenovo</option>
+                            <option value="Magazine Luiza">Magazine Luiza</option>
                             <option value="Positivo">Positivo</option>
-                            <option value="Ponto Frio">Ponto Frio</option>
-                            <option value="Ricardoeletro">Ricardoeletro</option>
                             <option value="Samsung">Samsung</option>
                             <option value="Submarino">Submarino</option>
-                            <option value="Terabyte">Terabyte</option>
+                            <option value="Casas Bahia">Casas Bahia</option>
+                            <option value="Ponto">Ponto</option>
+                            <option value="Multilaser">Multilaser</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Asus">Asus</option>
+                            <option value="Carrefour">Carrefour</option>
+                            <option value="Novo Mundo">Novo Mundo</option>
+                            <option value="Fast Shop">Fast Shop</option>
+                            <option value="Ricardoeletro">Ricardoeletro</option>
                         </select>
                     </div>
                     
@@ -186,18 +187,11 @@
                         <label for="so">Sistema Operacional</label>
                         <select id="so" name="so" required>
                             
-                            <option  value="SO: Windows 11">
-                                Windows 11
-                            </option>
-                            <option value="SO: Windows 10">
-                                Windows 10
-                            </option>
-                            <option value="SO: macOS">
-                                macOS
-                            </option>
-                            <option value="SO: Linux">
-                                Linux
-                            </option>
+                            <option  value="SO: Windows 11">Windows 11</option>
+                            <option value="SO: Windows 10">Windows 10</option>
+                            <option value="SO: ChromeOS">ChromeOS</option>
+                            <option value="SO: Linux">Linux</option>
+                            <option value="SO: macOS">macOS</option>
                         </select>
                     </div>
                     <div class="centralizar btn-spacing">
@@ -207,11 +201,20 @@
                 </form>
             
             </div>
+    
+            <pre><code>// Depois de baixar os dados json, para Adicionar 
+// Basta Rodar em .../notebooks.html:
+
+addNote(
+    txt_do_json_baixado.notebooks[0],
+    `categoria-notebook-${txt_do_json_baixado.titulo_safe}`
+)
+// Aqui colar o texto do json
+txt_do_json_baixado = </code></pre>
 
         </article>
 
     </main>
-
     <aside id="links-relacionados">
         <h2 class="centralizar">Links Relacionados</h2>
             <div class="centralizar">

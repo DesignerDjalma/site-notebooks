@@ -1,0 +1,81 @@
+/* AJUSTES */
+
+.btn-spacing{
+    margin: 10px;
+    gap: 20px;
+}
+
+.invert-false{
+    filter: invert(0);
+}
+
+.invert-true{
+    filter: invert(1);
+}
+
+.esconder {
+    visibility: hidden;
+}
+
+.remover {
+    display: none;
+}
+
+.afasta-bottom{
+    padding-bottom: 40px;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralizar-tudo * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verticalizar{
+    display: grid;
+    grid-template-columns: 100%;
+
+    /* background-color: rgba(153, 205, 50, 0.253); */
+}
+
+.cor {
+    height: 20px;
+    width: 100%;
+
+    background-color: rgba(87, 206, 83, 0.438);
+}
+
+.flex{
+    display: flex;
+}
+
+.alargar-horizontal {
+    width: 100%;
+}
+
+.expandir{
+    width: 100%;
+    height: 100%;
+}
+
+.alinhar-direita{
+    display: flex;
+    justify-content: right;
+}
+
+.ajustar-direita * {
+    display: flex;
+    justify-content: right;
+}
+
+.alinhar-esquerda{
+    display: flex;
+    justify-content: left;
+}
+
