@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Document</title>
+    <style>
+
+        :root {
+            --hCor: #000000;
+            --pCor: #409ae4; 
+        }
+
+
+        * {
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 15px !important;
+            /* color: var(--hCor) !important; */
+        }
+
+        img {
+
+        }
+        a p {
+            margin: 0 !important;
+            padding: 0 !important;
+            color: var(--pCor);
+        }
+
+
+        .btn-ncor{
+            /* background-color: #ffff00; */
+            font-size: 16px;
+            font-weight: bold;
+            border: #FFFFFF;
+            color: #ff0000;
+        }
+        .c, .centralizar{
+            display: flex;
+            justify-content: center;
+        }
+        .ch, .centralizar-horizontal{
+            display: flex;
+            justify-content: center;
+        }
+        .cv, .centralizar-vertical{
+            display: flex;
+            align-items: center;
+        }
+        .enc, .encaixar{
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: clamp(300px, 100%, 930px);
+            gap: 10px;
+        }
+        .rm, .remover{
+            display: none;
+        }
+        /* MEU CARD PRODUTO */
+        .card-produto-main {
+            /* background-color: rgb(250, 250, 250); */
+            border-radius: 16px;
+            background-color: #ffffff11;
+            box-shadow: inset;
+            box-shadow: #00000044 0px 8px 10px 0px ;
+        }
+        .card-produto-main a{
+            /* color: rgb(0, 0, 0, 0.8); */
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 10px;
+            height: 10px;
+        }
+        .card-produto{
+            /* background-color: rgb(0, 255, 0); */
+            display: block;
+            width: 270px;
+            height: 410px;
+            margin: 5px;
+        }
+        .card-prodouto-capa{
+            /* background-color: rgb(0, 0, 255, 0.4); */
+            padding: 0px;
+            height: 270px;
+            
+        }
+        .card-prodouto-capa img{
+            box-shadow: inset 0px 4px 40px 4px #00000000;
+            margin: 0;
+            border-radius: 15px 75px 15px 15px;
+            mask-image: url();
+            width: auto;
+        }
+        .card-produto-topo{
+            /* background-color: rgb(255, 72, 0); */
+            position: relative;
+        }
+        .card-produto-topo-heart{
+            position: absolute;
+            padding: 5px;
+            left: 240px;
+            display: flex;
+            justify-content: right;
+        }
+        .card-produto-topo-heart button{
+            background-color: rgba(255, 20, 145, 0); /* TRANSPARENTE NECESSARIO */
+            border: 0px;
+            margin-left: -20px;
+            padding: 0px;
+            width: 40px;
+        }
+        .card-produto-topo-heart img{
+            width: 40px;
+        }
+        .card-produto-descricao {
+            background-color: rgb(169, 223, 126);
+            position: relative;
+            height: 140px;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+        .card-produto-descricao *{
+            padding: 0px;
+            margin: 0px 10px 0px 10px;
+        }
+        .card-produto-descricao h2{
+            font-size: 20px !important;
+        }
+        .card-produto-descricao-entrega{
+            /* color: rgba(0, 0, 255, 0.5);  */
+            display: flex;
+            margin-left: 0px;
+        }
+        .card-produto-descricao-entrega p{
+            /* color: #5490ff; */
+            font-size: 14px;
+            color: var(--pCor);
+            font-weight: bold;
+            margin-left: -8px;
+            margin-top: 2px;
+        }
+        .card-produto-descricao-pix{
+            font-size: 12px;
+            color: olive;
+        }
+        .card-produto-descricao-preco{
+            /* background-color: rgba(255, 255, 255, 0.322); */
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* color: darkred; */
+            position: absolute;
+            font-size: 28px;
+            bottom: 0px;
+            right: 0px;
+            width: 90%;
+            display: flex;
+            justify-content: right;
+            margin: 0px;
+            padding: 0px;
+        }
+        .card-produto-descricao-quantidade{
+
+            display: grid;
+            grid-template-columns: 25px 22px 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            justify-content: left;
+            align-items: b;
+            position: absolute;
+            height: 0px;
+            margin-top: 0px;
+            bottom: 25px;
+            /* color: darkred; */
+            /* font-size: 14px; */
+            /* bottom: 495px; */
+            /* right: 0px; */
+            /* left: 210px; */
+            /* width: 90%; */
+            /* grid-template-columns: 50px 50px 50px; */
+            /* gap: 0px; */
+            /* margin-bottom: 50px; */
+            /* width: 90%; */
+        }
+        .card-produto-descricao-quantidade span{
+            /* background-color: rgba(0, 0, 0, 0.219); */
+            font-weight: bold;
+            width: 20px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .card-produto-descricao-quantidade button{
+            background-color: rgba(167, 149, 250, 0.37);
+            border: #000000;
+            border-radius: 5px;
+            position: relative !important; /* this is required for the z-index property to work */
+            z-index: 1 !important;
+            width: 22px !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            height: 22px !important;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="centralizar">
+        <div class="encaixar">
+
+            <!-- CARD DE UM PRODUTO -->
+            
+            <div class="card-produto-main">
+                    <div class="card-produto">
+                        <div class="card-produto-topo">
+                            <div class="card-produto-topo-heart">
+                                <button id="btnS2" onclick="cardProdutoHeartBtn(this)">
+                                    <img class="heart_on rm" src="https://cdn-icons-png.flaticon.com/512/1029/1029132.png" alt="">
+                                    <img class="heart_off " src="https://cdn-icons-png.flaticon.com/512/1029/1029234.png" alt="">
+                                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="#F22" xmlns="http://www.w3.org/2000/svg" ><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z" fill="#F22"/></svg> -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-prodouto-capa">
+                            <!-- <img class="card-prodouto-capa" src="https://via.placeholder.com/250"> -->
+                            <!-- <img class="card-prodouto-capa" src="https://cdn-icons-png.flaticon.com/512/2888/2888704.png"> -->
+                            <!-- <img src="https://cdn-icons-png.flaticon.com/512/2888/2888656.png"> -->
+                        
+                        </div>
+                        <div class="card-produto-descricao">
+                        <a shref="#">                
+                            <br>            
+                            <h2>ASUS M12 AX40S12</h2>
+                            <div class="card-produto-descricao-entrega">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 21.5L17.5 13L13 10L15 2.5L6.5 11L11 14L9 21.5Z" fill="#5490ff"/></svg>
+                                <p>Receba em até 1 dia útil</p>
+                            </div>
+                            <p class="card-produto-descricao-pix">
+                                 <s>de R$ 1799,90</s>por R$ 1619,91
+                                <br> PIX (10% de desconto)
+                            </p>
+                        </a>
+
+                            <p class="card-produto-descricao-preco">
+                                R$ 1.799,90
+                            </p>         
+                            <div class="card-produto-descricao-quantidade">
+                                <button class="ch cv" onclick="subQtd(this)">-</button>
+                                <span style="text-align: center;">
+                                    1
+                                </span>
+                                <button class="ch cv" onclick="addQtd(this)">+</button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            
+            <!-- FIM DO CARD -->
+            
+
+            <article>
+
+                
+            </article>
+            
+
+
+        </div>
+    </div>
+
+</body>
+
+
+
+<script>
+    function cardProdutoHeartBtn(btn) {
+        console.log(btn)
+        let h_off;
+        let h_on;
+
+        h_off = btn.children[1];
+        h_on = btn.children[0];
+
+        if (h_on.classList.contains('rm') === true){
+            h_on.classList.remove('rm');
+            h_off.classList.add('rm');
+        } else {
+            h_off.classList.remove('rm');
+            h_on.classList.add('rm');
+        }
+    }
+
+
+
+    function meuModal (btn) {
+        console.log(btn)
+    }
+    function addQtd(btn){
+        contador = parseFloat(btn.parentNode.childNodes[3].innerHTML);
+        contador++;
+        btn.parentNode.childNodes[3].innerHTML = contador;
+    }
+    function subQtd(btn){
+        contador = parseFloat(btn.parentNode.childNodes[3].innerHTML);
+        if (contador > 0){
+            contador--;
+        } 
+        btn.parentNode.childNodes[3].innerHTML = contador;
+    }
+</script>
+
+</html>
+

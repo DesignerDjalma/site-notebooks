@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --tam: 200px;
+            --tam-box-p: calc(var(--tam)*1);
+            --tam-box-m: calc(var(--tam)*2);
+            --tam-box-g: calc(var(--tam)*3);
+        }
+        
+        .r {background-color: rgb(255, 0, 0);}
+        .g {background-color: rgb(0, 255, 0);}
+        .b {background-color: rgb(0, 0, 255);}
+        
+        .o1, .o10 {opacity: 0.10;}
+        .o5, .o50 {opacity: 0.50;}
+        .o7, .o75 {opacity: 0.75;}
+
+        .ch, .centralizar-horizontal {
+            display: flex;
+            justify-content: center;
+        }
+        .cv, .centralizar-vertical {
+            display: flex;
+            align-items: center;
+        }
+        .cc, .centralizar-tudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-p {
+            width: var(--tam-box-p);
+            height: var(--tam-box-p);
+        }
+        .box-m {
+            width: var(--tam-box-m);
+            height: var(--tam-box-m);
+        }
+        .box-g {
+            width:  var(--tam-box-g);
+            height: var(--tam-box-g);;
+        }
+
+        .ah {
+            width: 100% !important;
+        }
+
+        .encaixar, .enc{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: clamp(300px, 100%, 930px);
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="o7 b box-g cv">
+        <div class="o7 r box-m ch">
+            <div class="o5 g box-p cc">
+                <h1>asdasd</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
