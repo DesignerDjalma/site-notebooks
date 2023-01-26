@@ -83,7 +83,7 @@
 //         ]
 //     },
 //     "notebooks_gamer":{
-//         "titulo":"💻 Notes Gamer RGB 👾",
+//         "titulo":"💻 Notes Gamer👾",
 //         "titulo_safe":"notesGamer",
 //         "notebooks":[
 //             { 
@@ -173,7 +173,7 @@ const dados = {
         "notebooks":[]
     },
     "notebooks_gamer":{
-        "titulo":"💻 Notes Gamer RGB 👾",
+        "titulo":"💻Notes Gamer👾",
         "titulo_safe":"notesGamer",
         "notebooks":[]
     }
@@ -239,7 +239,7 @@ function addRecursivo(){
         let titulo_safe = `categoria-notebook-${categoria.titulo_safe}`
         exibicao.innerHTML += `
         <hr>
-        <h1 class="categoria-notebook">
+        <h1 class="centralizar categoria-notebook">
             ${categoria.titulo}
         </h1>
         <div id="${titulo_safe}"></div>

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./temacode.css">
     <script defer src="./script.js"></script>
     <script defer src="./scriptCatalogo.js"></script>
     <title>Site Teste</title>
@@ -103,6 +105,46 @@
 
     </main>
 
+    <h3 class="centralizar">Mobile/Desktop</h3>
+    
+    <div class="centralizar">
+        <div style="width: 80%;">
+            <textarea id="texto"></textarea>
+            <button onclick="enviarNotebook(this)">Adicionar</button>
+        </div>
+    </div>
+
+    <h3 class="centralizar">Desktop Only</h3>
+
+    <div class="centralizar">
+        
+<pre><code class="language-javascript">// Para adicionar um notebook novo:
+
+function adicionarNote (obj) {
+    cat = "categoria-notebook-";
+    nome_class = obj.titulo_safe;
+    addNote(
+        obj.notebooks[0],
+        `${cat}${nome_class}`
+    );
+}
+obj = // Colar o JSON aqui
+</code></pre>
+
+
+    </div>
+    <div class="centralizar">
+        
+        <pre><div><a href="#"><p style="margin: 5px; display: flex; justify-content: right;">Copiar</p></a></div><code class="language-javascript">// Chamar a Função:
+
+adicionarNote(obj)
+        </code></pre>
+        
+        
+            </div>
+
+            
+
     <aside id="links-relacionados">
         <h2 class="centralizar">Links Relacionados</h2>
             <div class="centralizar">
@@ -125,4 +167,39 @@
         </div>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script>
+    // const botaoCopiar = document.querySelector('.botao-copiar');
+    // const codigo = document.querySelector('code');
+
+    // botaoCopiar.addEventListener('click', () => {
+    // const selecao = document.getSelection();
+    // const range = document.createRange();
+    // range.selectNodeContents(codigo);
+    // selecao.removeAllRanges();
+    // selecao.addRange(range);
+    // document.execCommand('copy');
+    // selecao.removeAllRanges();
+    // alert('Código copiado para a área de transferência!');
+    // });
+
+
+    
+    function enviarNotebook (btn) {
+        const texto = document.getElementById("texto").value;
+        console.log(texto);
+
+        function adicionarNote (obj) {
+            cat = "categoria-notebook-";
+            nome_class = obj.titulo_safe;
+            addNote(
+                obj.notebooks[0],
+                `${cat}${nome_class}`
+            );
+        }  
+        adicionarNote(JSON.parse(texto))
+    }
+
+</script>
 </html>

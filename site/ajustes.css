@@ -1,0 +1,136 @@
+:root {
+    --hCor: #000000;
+    --pCor: #409ae4; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 15px !important;
+    /* color: var(--hCor) !important; */
+}
+
+a p {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: var(--pCor);
+}
+
+
+.btn-ncor{
+    /* background-color: #ffff00; */
+    font-size: 16px;
+    font-weight: bold;
+    border: #FFFFFF;
+    color: #ff0000;
+}
+.c, .centralizar{
+    display: flex;
+    justify-content: center;
+}
+.ch, .centralizar-horizontal{
+    display: flex;
+    justify-content: center;
+}
+.cv, .centralizar-vertical{
+    display: flex;
+    align-items: center;
+}
+.enc, .encaixar{
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: clamp(300px, 100%, 930px);
+    gap: 10px;
+}
+.rm, .remover{
+    display: none;
+}
+
+
+
+
+.btn-spacing{
+    margin: 10px;
+    gap: 20px;
+}
+
+.invert-false{
+    filter: invert(0);
+}
+
+.invert-true{
+    filter: invert(1);
+}
+
+.esconder {
+    visibility: hidden;
+}
+
+.remover {
+    display: none;
+}
+
+.afasta-bottom{
+    padding-bottom: 40px;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralizar-tudo * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verticalizar{
+    display: grid;
+    grid-template-columns: 100%;
+
+    /* background-color: rgba(153, 205, 50, 0.253); */
+}
+
+.cor {
+    height: 20px;
+    width: 100%;
+
+    background-color: rgba(87, 206, 83, 0.438);
+}
+
+.flex{
+    display: flex;
+}
+
+.alargar-horizontal {
+    width: 100%;
+}
+
+.expandir{
+    width: 100%;
+    height: 100%;
+}
+
+.alinhar-direita{
+    display: flex;
+    justify-content: right;
+}
+
+.ajustar-direita * {
+    display: flex;
+    justify-content: right;
+}
+
+.alinhar-esquerda{
+    display: flex;
+    justify-content: left;
+}

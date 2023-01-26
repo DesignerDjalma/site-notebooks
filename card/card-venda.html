@@ -13,27 +13,21 @@
             --corPreta: #000000c9;
             --pCor: #409ae4; 
         }
-
-
         * {
             /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin: 0;
             padding: 0;
         }
-
         h2 {
             font-size: 15px !important;
             /* color: var(--hCor) !important; */
         }
-
         a p {
             margin: 0 !important;
             padding: 0 !important;
             color: var(--pCor);
         }
-
-
         .btn-ncor{
             /* background-color: #ffff00; */
             font-size: 16px;
@@ -88,18 +82,23 @@
             margin: 5px;
         }
         .card-prodouto-capa{
-            background-color: rgb(0, 0, 255, 0.4);
-            display: ;
-            /* padding: 0px; */
+            /* background-color: rgb(0, 0, 255, 0.4); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
             height: 270px;
-            /* width: 250px; */
+            width: 270px;
             
         }
         .card-prodouto-capa img{
             box-shadow: inset 0px 4px 40px 4px #00000000;
-            margin: 0;
+            margin: 0px;
             object-fit: cover;
             width: 100%;
+            border-radius: 25px;
+            height: 260px;
+            width: 260px;
         }
         .card-produto-topo{
             /* background-color: rgb(255, 72, 0); */
@@ -107,8 +106,8 @@
         }
         .card-produto-topo-heart{
             position: absolute;
-            padding: 5px;
-            left: 240px;
+            padding: 10px;
+            left: 230px;
             display: flex;
             justify-content: right;
         }
@@ -231,10 +230,10 @@
                             </div>
                         </div>
                         <div class="card-prodouto-capa centralizar">
-                            <img class="card-prodouto-capa" src="https://via.placeholder.com/250">
+                            <!-- <img class="card-prodouto-capa" src="https://via.placeholder.com/250"> -->
                             <!-- <img class="card-prodouto-capa" src="https://cdn-icons-png.flaticon.com/512/2888/2888704.png"> -->
                             <!-- <img class="card-prodouto-capa" width="250px" src="https://www.lenovo.com/medias/lenovo-laptops-student-chromebooks-100e-chromebook-gen3-11inch-amd-hero.png?context=bWFzdGVyfHJvb3R8ODMyNDZ8aW1hZ2UvcG5nfGhiZi9oZmUvMTE1MzIwNjc0Mzg2MjIucG5nfDE5YzFiMGM2MWQ0NzI3MmRiM2ViMDI3YzEyYzA5MjllNWZhY2JkZjg1MGU3NTgzZjZkMTBkM2I1MmVjNzNmYTk"> -->
-                            <!-- <img src="https://cdn-icons-png.flaticon.com/512/2888/2888656.png"> -->
+                            <img src="https://cdn-icons-png.flaticon.com/512/2888/2888656.png">
                         
                         </div>
                         <div class="card-produto-descricao">
@@ -269,7 +268,57 @@
             
             <!-- FIM DO CARD -->
             
+            <!-- CARD DE UM PRODUTO -->
+                        
+            <div class="card-produto-main">
+                <div class="card-produto">
+                    <div class="card-produto-topo">
+                        <div class="card-produto-topo-heart">
+                            <button id="btnS2" onclick="cardProdutoHeartBtn(this)">
+                                <img class="heart_on rm" src="https://cdn-icons-png.flaticon.com/512/1029/1029132.png" alt="">
+                                <img class="heart_off " src="https://cdn-icons-png.flaticon.com/512/1029/1029234.png" alt="">
+                                <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="#F22" xmlns="http://www.w3.org/2000/svg" ><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z" fill="#F22"/></svg> -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-prodouto-capa centralizar">
+                        <img class="card-prodouto-capa" src="https://via.placeholder.com/250">
+                        <!-- <img class="card-prodouto-capa" src="https://cdn-icons-png.flaticon.com/512/2888/2888704.png"> -->
+                        <!-- <img class="card-prodouto-capa" width="250px" src="https://www.lenovo.com/medias/lenovo-laptops-student-chromebooks-100e-chromebook-gen3-11inch-amd-hero.png?context=bWFzdGVyfHJvb3R8ODMyNDZ8aW1hZ2UvcG5nfGhiZi9oZmUvMTE1MzIwNjc0Mzg2MjIucG5nfDE5YzFiMGM2MWQ0NzI3MmRiM2ViMDI3YzEyYzA5MjllNWZhY2JkZjg1MGU3NTgzZjZkMTBkM2I1MmVjNzNmYTk"> -->
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/2888/2888656.png"> -->
+                    
+                    </div>
+                    <div class="card-produto-descricao">
+                    <a shref="#">                
+                        <br>            
+                        <h2>ASUS M12 AX40S12</h2>
+                        <div class="card-produto-descricao-entrega">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 21.5L17.5 13L13 10L15 2.5L6.5 11L11 14L9 21.5Z" fill="#5490ff"/></svg>
+                            <p>Receba em até 1 dia útil</p>
+                        </div>
+                        <p class="card-produto-descricao-pix">
+                            <s>de R$ 1799,90</s>por R$ 1619,91
+                            <br> PIX (10% de desconto)
+                        </p>
+                    </a>
 
+                        <p class="card-produto-descricao-preco">
+                            R$ 1.799,90
+                        </p>         
+                        <div class="card-produto-descricao-quantidade">
+                            <button class="ch cv" onclick="subQtd(this)">-</button>
+                            <span style="text-align: center;">
+                                1
+                            </span>
+                            <button class="ch cv" onclick="addQtd(this)">+</button>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FIM DO CARD -->
             
 
 
