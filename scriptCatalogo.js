@@ -1,172 +1,4 @@
-// const dados = {
-//     "notebooks_ate_4k":{
-//         "titulo":"💻 Notes até 4k 💸",
-//         "titulo_safe":"notes4k",
-//         "notebooks":[
-//             { 
-//                 "nome_completo": "Notebook IdeaPad 3 (15\" AMD)",
-//                 "nome":"Notebook IdeaPad 3",
-//                 "preco": 2991.99,
-//                 "site":"lenovo",
-//                 "comprar_link":"https://www.lenovo.com/br/pt/laptops/ideapad/serie-300/IdeaPad-3-15ALC6/p/82MFS00200",
-//                 "capa_img_link":"https://www.lenovo.com/medias/lenovo-laptop-ideapad-3i-15in-hero.png?context=bWFzdGVyfHJvb3R8MzM3NTg5fGltYWdlL3BuZ3xoM2MvaDExLzE0MTkxNTE3NDAxMTE4LnBuZ3w4OTg2YTg5YzQ0ZmFiZDYzOTdjZTkzNDJjNDY3MTJlODM4YTQ2ODdlMGVmZTFlYjBiODRjYWFmY2JjOTBkODNj",
-//                 "descricao": {
-//                     "tela":[
-//                         "15.6\" Full HD (1920x1080) TN Antirreflexo",
-//                         "SCR: FHD 15.6\" TN AR"
-//                     ],
-//                     "cpu":[
-//                         "Plataforma: Notebook\nFamília de produto: AMD Ryzen™ Processors\nLinha de produto: AMD Ryzen™ 7 Mobile Processors with Radeon™ Graphics\nNº de núcleos de CPU: 8\nNº de threads: 16\nClock de Max Boost: Até 4.3GHz\nClock básico: 1.8GHz\nTotal de Cache L2: 4MB\nCachê L3 total: 8MB\nTDP / TDP Padrão: 15W\nAMD Configurable TDP (cTDP): 10-25W\nProcessor Technology for CPU Cores: TSMC 7nm FinFET\nPacote: FP6\nTemps máx: 105°C\nData de lançamento: 1/12/2021\nSuporte de SO: Edição Windows 11 - 64-Bit\n",
-//                         "CPU: AMD Ryzen™ 7"
-//                     ],
-//                     "ram":[
-//                         "Memória: 8 GB (4 GB Soldado DDR4 3200MHz + 4 GB SO-DIMM DDR4) 3200MHz",
-//                         "RAM: 8 GB DDR4"
-//                     ],
-//                     "rom":[
-//                         "Armazenamento: 256 GB SSD M.2 2242 PCIe NVMe",
-//                         "SSD: 256 GB"
-//                     ],
-//                     "gpu":[
-//                         "Placa de Vídeo: Modelo gráfico AMD Radeon™ Graphics Nº de núcleos de GPU 8 Frequência gráfica 1900 MHz",
-//                         "GPU: AMD Radeon™"
-//                     ],
-//                     "cam":[
-//                         "Câmera: 720p HD com porta de privacidade",
-//                         "CAM: 720p HD +PRV"
-//                     ],
-//                     "so":[
-//                         "Sistema Operacional: Linux",
-//                         "SO: Linux"
-//                     ]
-//                 }
-//             },
-//             { 
-//                 "nome_completo": "Notebook IdeaPad 3 (15\" AMD)",
-//                 "nome":"Notebook IdeaPad 3",
-//                 "preco": 1991.99,
-//                 "site":"lenovo",
-//                 "comprar_link":"https://www.lenovo.com/br/pt/laptops/ideapad/serie-300/IdeaPad-3i-15-inch-Intel/p/82BUS00100",
-//                 "capa_img_link":"https://www.lenovo.com/medias/lenovo-laptop-ideapad-3-15-intel-gallery-6.png?context=bWFzdGVyfHJvb3R8MjQ2NDM5fGltYWdlL3BuZ3xoNGMvaGU3LzEwNzU3MjQ2Nzc5NDIyLnBuZ3w4ZTRiMzdlYTllZjI4NzdiZDlkNmU2OWExZGQ4M2ZmNTg1Y2Q4ODg4ZTc5M2FmZTFkYTJhNzFjMGNlZjgyYTM0",
-//                 "descricao": {
-//                     "tela":[
-//                         "Tela: 15.6\" HD (1366 x 768), TN, Antirreflexo, Non-Touch, 220 Nits",
-//                         "SCR: HD 15.6\" TN AR"
-//                     ],
-//                     "cpu":[
-//                         "Processador: Processador Intel® Celeron® N4020 (1,10 GHz até 2,80 GHz)",
-//                         "CPU: Intel® Celeron®"
-//                     ],
-//                     "ram":[
-//                         "Memória: 4 GB DDR4 3200MHz",
-//                         "RAM: 4 GB DDR4"
-//                     ],
-//                     "rom":[
-//                         "Armazenamento: 128 GB SSD",
-//                         "SSD: 128 GB"
-//                     ],
-//                     "gpu":[
-//                         "Placa de vídeo Intel UHD Graphics 600",
-//                         "GPU: Intel UHD Gfx™"
-//                     ],
-//                     "cam":[
-//                         "Câmera: 720p HD com porta de privacidade",
-//                         "CAM: 720p HD +PRV"
-//                     ],
-//                     "so":[
-//                         "Sistema Operacional: Linux",
-//                         "SO: Linux"
-//                     ]
-//                 }
-//             },
-            
-//         ]
-//     },
-//     "notebooks_gamer":{
-//         "titulo":"💻 Notes Gamer👾",
-//         "titulo_safe":"notesGamer",
-//         "notebooks":[
-//             { 
-//                 "nome_completo": "Notebook IdeaPad 3 (15\" AMD)",
-//                 "nome":"Notebook IdeaPad 3",
-//                 "preco": 2200.99,
-//                 "site":"lenovo",
-//                 "comprar_link":"https://www.lenovo.com/br/pt/laptops/ideapad/serie-300/IdeaPad-3-15ALC6/p/82MFS00200",
-//                 "capa_img_link":"https://www.lenovo.com/medias/lenovo-laptop-ideapad-3i-15in-hero.png?context=bWFzdGVyfHJvb3R8MzM3NTg5fGltYWdlL3BuZ3xoM2MvaDExLzE0MTkxNTE3NDAxMTE4LnBuZ3w4OTg2YTg5YzQ0ZmFiZDYzOTdjZTkzNDJjNDY3MTJlODM4YTQ2ODdlMGVmZTFlYjBiODRjYWFmY2JjOTBkODNj",
-//                 "descricao": {
-//                     "tela":[
-//                         "15.6\" Full HD (1920x1080) TN Antirreflexo",
-//                         "SCR: FHD 15.6\" TN AR"
-//                     ],
-//                     "cpu":[
-//                         "Plataforma: Notebook\nFamília de produto: AMD Ryzen™ Processors\nLinha de produto: AMD Ryzen™ 7 Mobile Processors with Radeon™ Graphics\nNº de núcleos de CPU: 8\nNº de threads: 16\nClock de Max Boost: Até 4.3GHz\nClock básico: 1.8GHz\nTotal de Cache L2: 4MB\nCachê L3 total: 8MB\nTDP / TDP Padrão: 15W\nAMD Configurable TDP (cTDP): 10-25W\nProcessor Technology for CPU Cores: TSMC 7nm FinFET\nPacote: FP6\nTemps máx: 105°C\nData de lançamento: 1/12/2021\nSuporte de SO: Edição Windows 11 - 64-Bit\n",
-//                         "CPU: AMD Ryzen™ 7"
-//                     ],
-//                     "ram":[
-//                         "Memória: 8 GB (4 GB Soldado DDR4 3200MHz + 4 GB SO-DIMM DDR4) 3200MHz",
-//                         "RAM: 8 GB DDR4"
-//                     ],
-//                     "rom":[
-//                         "Armazenamento: 256 GB SSD M.2 2242 PCIe NVMe",
-//                         "SSD: 256 GB"
-//                     ],
-//                     "gpu":[
-//                         "Placa de Vídeo: Modelo gráfico AMD Radeon™ Graphics Nº de núcleos de GPU 8 Frequência gráfica 1900 MHz",
-//                         "GPU: AMD Radeon™"
-//                     ],
-//                     "cam":[
-//                         "Câmera: 720p HD com porta de privacidade",
-//                         "CAM: 720p HD +PRV"
-//                     ],
-//                     "so":[
-//                         "Sistema Operacional: Linux",
-//                         "SO: Linux"
-//                     ]
-//                 }
-//             },
-//             { 
-//                 "nome_completo": "Notebook IdeaPad 3 (15\" AMD)",
-//                 "nome":"Notebook IdeaPad 3",
-//                 "preco": 15991.99,
-//                 "site":"lenovo",
-//                 "comprar_link":"https://www.lenovo.com/br/pt/laptops/ideapad/serie-300/IdeaPad-3i-15-inch-Intel/p/82BUS00100",
-//                 "capa_img_link":"https://www.lenovo.com/medias/lenovo-laptop-ideapad-3-15-intel-gallery-6.png?context=bWFzdGVyfHJvb3R8MjQ2NDM5fGltYWdlL3BuZ3xoNGMvaGU3LzEwNzU3MjQ2Nzc5NDIyLnBuZ3w4ZTRiMzdlYTllZjI4NzdiZDlkNmU2OWExZGQ4M2ZmNTg1Y2Q4ODg4ZTc5M2FmZTFkYTJhNzFjMGNlZjgyYTM0",
-//                 "descricao": {
-//                     "tela":[
-//                         "Tela: 15.6\" HD (1366 x 768), TN, Antirreflexo, Non-Touch, 220 Nits",
-//                         "SCR: HD 15.6\" TN AR"
-//                     ],
-//                     "cpu":[
-//                         "Processador: Processador Intel® Celeron® N4020 (1,10 GHz até 2,80 GHz)",
-//                         "CPU: Intel® Celeron®"
-//                     ],
-//                     "ram":[
-//                         "Memória: 4 GB DDR4 3200MHz",
-//                         "RAM: 4 GB DDR4"
-//                     ],
-//                     "rom":[
-//                         "Armazenamento: 128 GB SSD",
-//                         "SSD: 128 GB"
-//                     ],
-//                     "gpu":[
-//                         "Placa de vídeo Intel UHD Graphics 600",
-//                         "GPU: Intel UHD Gfx™"
-//                     ],
-//                     "cam":[
-//                         "Câmera: 720p HD com porta de privacidade",
-//                         "CAM: 720p HD +PRV"
-//                     ],
-//                     "so":[
-//                         "Sistema Operacional: Linux",
-//                         "SO: Linux"
-//                     ]
-//                 }
-//             }
-//         ]
-//     }
-// }
-
-const dados = {
+const dados_template = {
     "notebooks_ate_4k":{
         "titulo":"💻 Notes até 4k 💸",
         "titulo_safe":"notes4k",
@@ -178,6 +10,29 @@ const dados = {
         "notebooks":[]
     }
 }
+
+const dados = {
+    "notebooks_ate_4k":{
+        "titulo":"💻 Notes até 4k 💸",
+        "titulo_safe":"notes4k",
+        "notebooks":[
+             // objetos aqui
+             {"nome_completo":"ASUSE510","nome":"ASUSE510","preco":"1484.10","site":"Asus","comprar_link":"https://www.asus.com/br/laptops/for-home/all-series/asus-e510/techspec/","capa_img_link":"https://dlcdnwebimgs.asus.com/gain/90a81782-5c2a-4e9d-82c6-270da9a311a3/","descricao":{"tela":["TELA:15,6''HD","TELA:15,6''HD"],"cpu":["CPU:Intel®Celeron®N4020","CPU:Intel®Celeron®N4020"],"ram":["RAM:4GB","RAM:4GB"],"rom":["SSD:128GBeMMC","SSD:128GBeMMC"],"gpu":["GPU:Intel®UHD","GPU:Intel®UHD"],"cam":["CAM:VGA","CAM:VGA"],"so":["SO:Windows11","SO:Windows11"]}},
+             {"nome_completo":"NotebookVostro3510","nome":"NotebookVostro3510","preco":"2799","site":"Dell","comprar_link":"https://www.dell.com/pt-br/shop/laptops/3510-intel/spd/vostro-15-3510-laptop/v3510w8080w","capa_img_link":"https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/15-3510/media-gallery/archive/dv3510nt_cnb_00055lf110_gy-usb-a.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=402&qlt=100,1&resMode=sharp2&size=402,402&chrss=full","descricao":{"tela":["TELA: Full HD de 15.6\"","TELA: Full HD de 15.6\""],"cpu":["CPU: Intel® Pentium® Gold 7505","CPU: Intel® Pentium® Gold 7505"],"ram":["RAM: 4GB DDR4 2666MHz","RAM: 4GB DDR4 2666MHz"],"rom":["SSD: 128GB PCIe NVMe M.2","SSD: 128GB PCIe NVMe M.2"],"gpu":["GPU: Intel® UHD","GPU: Intel® UHD"],"cam":["CAM: 720p HD ","CAM: 720p HD "],"so":["SO: Windows 11","SO: Windows 11"]}},
+             {"nome_completo":"NotebookVAIO®FE15AMD®","nome":"NotebookVAIO®FE15AMD®","preco":"2991.12","site":"LojasAmericanas","comprar_link":"https://www.br.vaio.com/notebook-vaio-fe15-amd-ryzen3-ssd-256gb-8gb-linux-full-hd-tela-15-prata-titanio/p","capa_img_link":"https://vaiobr.vteximg.com.br/arquivos/ids/160655-1000-1000/VAIO-Alder-Lake-15-Cinza_ang-12_Alta.jpg?v=638048253217370000","descricao":{"tela":["TELA: 15.6\", LED FHD","TELA: 15.6\", LED FHD"],"cpu":["CPU: AMD® Ryzen 5","CPU: AMD® Ryzen 5"],"ram":["RAM: 8GB DDR4","RAM: 8GB DDR4"],"rom":["SSD: 256GB SSD M.2 PCIe Gen 3","SSD: 256GB SSD M.2 PCIe Gen 3"],"gpu":["GPU: AMD Radeon™ Graphics","GPU: AMD Radeon™ Graphics"],"cam":["CAM: HD 720p","CAM: HD 720p"],"so":["SO: Linux","SO: Linux"]}},
+             {"nome_completo":"NotebookPositivoMotionGrayC8240gi-15","nome":"MotionGrayC8240gi-15","preco":"1614.15","site":"LojasAmericanas","comprar_link":"https://loja.meupositivo.com.br/notebook-positivo-motion-gray-c8240gi-15-intel-celeron-dual-core-ssd-240gb-8gb-linux-tela-15-cinza/p","capa_img_link":"https://lojapositivo.vteximg.com.br/arquivos/ids/163284-588-588/Positivo-Motion_15_linux_lateral_direita.jpg?v=638054193199700000","descricao":{"tela":["TELA: 15.6\" LED HD","TELA: 15.6\" LED HD"],"cpu":["CPU: Intel®Celeron® Dual Core","CPU: Intel®Celeron® Dual Core"],"ram":["RAM: 8GB","RAM: 8GB"],"rom":["SSD: 240GB SSD 2,5''","SSD: 240GB SSD 2,5''"],"gpu":["GPU: Intel® UHD","GPU: Intel® UHD"],"cam":["CAM: HD 720p","CAM: HD 720p"],"so":["SO: Linux","SO: Linux"]}}
+        ]
+    },
+    "notebooks_gamer":{
+        "titulo":"💻 Notes Gamer👾",
+        "titulo_safe":"notesGamer",
+        "notebooks":[
+            // objetos aqui
+        ]
+    }
+}
+
+
 
 function addNote(obj_notebook, titulo_safe){
     const expo = document.getElementById(titulo_safe);
@@ -221,7 +76,7 @@ function addNote(obj_notebook, titulo_safe){
                         
     
                         <div class="botao-comprar">
-                            <button onclick="window.open('${obj_notebook.comprar_link}','_blank')" class="button-85">COMPRAR</button>
+                            <button onclick="window.open('${obj_notebook.comprar_link}','_blank')">COMPRAR</button>
                         </div>
     
                     </div>
