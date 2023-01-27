@@ -53,7 +53,7 @@ function addNote(obj_notebook, titulo_safe){
     
     
                     <!-- Aqui vem aquela imagem bonita transparente -->
-                    <img class="produto-notebook-imagem-url centralizar" src="${obj_notebook.capa_img_link}">
+                    <img class="produto-notebook-imagem-url centralizar rm-bg" src="${obj_notebook.capa_img_link}">
                 
     
                 </div>
@@ -76,7 +76,7 @@ function addNote(obj_notebook, titulo_safe){
                         
     
                         <div class="botao-comprar">
-                            <button onclick="window.open('${obj_notebook.comprar_link}','_blank')">COMPRAR</button>
+                            <button class="button-85" onclick="window.open('${obj_notebook.comprar_link}','_blank')">COMPRAR</button>
                         </div>
     
                     </div>
