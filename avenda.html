@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Site Teste</title>
+</head>
+
+  
+  
+<body>
+
+    <!-- CABEÇALHO RESPONSIVO + EASY DARK MODE -->
+    <header class=>
+        <nav class="navegacao-barra verticalizar centralizar">
+
+            <!--                   -->
+            <!-- NAVEGAÇÃO DESKTOP -->
+            <!--                   -->
+
+            <div class="navegacao-desktop alargar-horizontal centralizar">
+
+                <!-- LOGO -->
+                <div class="navegacao-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/9326/9326434.png" alt="logo como uma lerta b">
+                </div>
+
+                <!-- LISTA -->
+                <!-- esconder aqui -->
+                <div id="nav-desktop-lista" class="navegacao-lista-desktop">
+                    <ul>
+                        <li><a href="./index.html">INÍCIO</a></li>
+                        <li><a href="./notebooks.html">NOTEBOOKS</a></li>
+                        <li><a href="./cadastrar.html">CADASTRAR</a></li>
+                        <li><a href="#links-relacionados">LINKS</a></li>
+                        <li><a href="./avenda.html">A VENDA</a></li>
+                    </ul>
+                </div>
+                
+                <!-- DESKTOP: BOTÃO DARK MODE -->
+                <!-- esconder aqui -->
+                <div id="nav-desktop-btn" class=" alargar-horizontal alinhar-direita">
+                    <div class="navegacao-menu alinhar-direita">
+                        <button id="nav-desktop-btn-troca-tema" class="invert-false centralizar" onclick="trocarTema()">
+                            <i class="gg-moon"></i>
+                        </button>
+                    </div>
+                </div>
+
+            <!-- FIM NAVEGAÇÃO DESKTOP -->
+
+            <!--                  -->
+            <!-- NAVEGAÇÃO MOBILE -->
+            <!--                  -->
+
+                <!-- esconder aqui -->
+                <!-- MOBILE: MENU ICONE -->
+                <div id="nav-mobile-btn" class=" alargar-horizontal alinhar-direita">
+                    <div class="navegacao-menu alinhar-direita">
+                        <button id="nav-mobile-btn-menu-drop-down" class="invert-false centralizar" onclick="trocarIconeMenu(this)">
+                            <i class="gg-menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- esconder aqui -->
+            <!-- MOBILE: MENU LISTA VERTICAL -->
+            <div id="nav-mobile-lista" class="remover afasta-bottom">
+                <div id="nav-mobile" class="alargar-horizontal centralizar">
+                    <ul class="verticalizar centralizar-tudo">
+                        <!-- MOBILE: BOTÃO DARK MODE -->
+                        <div class="navegacao-menu centralizar">
+                            <button id="nav-mobile-btn-troca-tema" class="invert-false centralizar" onclick="trocarTema()">
+                                <i class="gg-moon"></i>
+                            </button>
+                        </div>
+                        <li><a href="./index.html">INÍCIO</a></li>
+                        <li><a href="./notebooks.html">NOTEBOOKS</a></li>
+                        <li><a href="./cadastrar.html">CADASTRAR</a></li>
+                        <li><a href="#links-relacionados">LINKS</a></li>
+                        <li><a href="./avenda.html">A VENDA</a></li>
+                        
+                        <!-- FIM BOTÃO DARK MODE -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FIM NAVEGAÇÃO MOBILE -->
+
+        </nav>
+    </header> 
+    <!-- FIM DO CABEÇALHO -->
+
+<h2>Por que comprar este computador?</h2>
+
+<div class="component-container">
+    <div class="component-box">
+        <img src="https://www.officer.com.br/content/images/thumbs/0003178_processador-amd-ryzen-5-3600x-cache-32mb-38ghz-44ghz-max-turbo-am4-sem-video-100-100000022box.png" alt="Processador">
+        <h3>Processador (CPU)</h3>
+        <p>O processador AMD Ryzen 5 3600X oferece excelente desempenho e eficiência energética, garantindo que suas tarefas sejam realizadas de forma rápida e suave.</p>
+    </div>
+    <div class="component-box">
+        <img src="https://img.terabyteshop.com.br/produto/g/memoria-ddr4-xpg-gammix-d30-8gb-3200mhz-cl16-black-ax4u32008g16a-sb30_126322.png" alt="Memória RAM">
+        <h3>Memória RAM</h3>
+        <p>Com 32GB de RAM DDR4 a 3200MHz, este computador oferece uma quantidade generosa de memória para lidar com multitarefas intensivas e execução rápida de aplicativos.</p>
+    </div>
+    <div class="component-box">
+        <img src="https://www.asus.com/media/BR/products/YUhlkHQwXHaWettj/P_setting_xxx_0_90_end_500.png" alt="Placa-Mãe">
+        <h3>Placa-Mãe</h3>
+        <p>A placa-mãe ASUS Prime B450M Gaming oferece durabilidade e confiabilidade excepcionais, garantindo uma base sólida para o seu sistema.</p>
+    </div>
+    <div class="component-box">
+        <img src="https://www.gbcloud.net/blog/wp-content/uploads/2021/11/HDD-VS-SSD-VS-M_2-NVME_-How-Each-Work-And-What-Are-The-Differences_.jpg" alt="Armazenamento">
+        <h3>Armazenamento</h3>
+        <p>O conjunto de armazenamento inclui um SSD M.2 de 512GB para inicializações rápidas e tempos de carregamento de aplicativos, além de um HD de 2TB para armazenamento de dados amplo.</p>
+    </div>
+    <div class="component-box">
+        <img src="https://www.gamemax-br.com/img/produtos/2(28).png" alt="Monitor">
+        <h3>Monitor</h3>
+        <p>O monitor Gamemax de 24" com 144Hz e curvatura proporciona uma experiência visual imersiva e suave, ideal para jogos e entretenimento.</p>
+    </div>
+    <div class="component-box">
+        <img src="https://www.atacadogames.com/imagem/fontes/fonte-atx-750w-80plus-gold-gigabyte-aorus-full-modular-gp-p750gm/2/135932.jpg?pfdrid_c=true" alt="Fonte de Alimentação">
+        <h3>Fonte de Alimentação</h3>
+        <p>A fonte de alimentação Gigabyte 750W 80 Plus Gold fornece energia estável e eficiente, garantindo o funcionamento confiável de todos os componentes do sistema.</p>
+    </div>
+</div>
+
+
+<table id="productTable">
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Qtd</th>
+            <th>Total</th>
+            <th>Detalhes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>PLACA MÃE</td>
+            <td>R$ 300</td>
+            <td>1</td>
+            <td>R$ 300</td>
+            <td>PM B450m asus prime gaming</td>
+        </tr>
+        <tr>
+            <td>RAM</td>
+            <td>R$ 150</td>
+            <td>4</td>
+            <td>R$ 600</td>
+            <td>32GB RAM (4x8) 3200MHz</td>
+        </tr>
+        <tr>
+            <td>HD</td>
+            <td>R$ 400</td>
+            <td>1</td>
+            <td>R$ 400</td>
+            <td>1 HD de 2TB</td>
+        </tr>
+        <tr>
+            <td>SSD M2</td>
+            <td>R$ 150</td>
+            <td>1</td>
+            <td>R$ 150</td>
+            <td>1 SSD 512GB M.2</td>
+        </tr>
+        <tr>
+            <td>SSD</td>
+            <td>R$ 50</td>
+            <td>2</td>
+            <td>R$ 100</td>
+            <td>2 SSD SATA (1 de 120GB e outro de 240GB)</td>
+        </tr>
+        <tr>
+            <td>FONTE</td>
+            <td>R$ 200</td>
+            <td>1</td>
+            <td>R$ 200</td>
+            <td>750W 80 Plus Gold da Gigabyte</td>
+        </tr>
+        <tr>
+            <td>CPU</td>
+            <td>R$ 350</td>
+            <td>1</td>
+            <td>R$ 350</td>
+            <td>AMD Ryzen 5 3600X</td>
+        </tr>
+        <tr>
+            <td>MONITOR</td>
+            <td>R$ 400</td>
+            <td>1</td>
+            <td>R$ 400</td>
+            <td>Gamemax 24" 144Hz curvo</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    const table = document.getElementById("productTable");
+    const rows = table.getElementsByTagName("tr");
+    
+    for (let i = 1; i < rows.length; i++) {
+        const priceCell = rows[i].getElementsByTagName("td")[1];
+        const price = parseFloat(priceCell.innerText.replace("R$ ", ""));
+        const hue = 120 - (price - 50) / 350 * 120 ; // Adjust the range for the gradient
+        
+        rows[i].style.backgroundColor = "hsl(" + hue + ", 100%, 80%)";
+    }
+</script>
+   
+
+  
+    <!-- TUDO IRÁ ENTRAR DENTRO DESSE CONTAINER MAIN-->
+    <main class="centralizar">
+
+    </main>
+
+    <aside id="links-relacionados">
+        <h2 class="centralizar">Links Relacionados</h2>
+            <div class="centralizar">
+                <ul><li><a target="_blank" href="https://www.americanas.com.br/">Lojas Americanas</a></li>
+                    <li><a target="_blank" href="https://www.magazineluiza.com.br/">Magazine Luiza </a></li></ul>
+                <ul><li><a target="_blank" href="https://www.pichau.com.br/">Pichau Informática</a></li>
+                    <li><a target="_blank" href="https://www.intersol.com.br/">Sol Informática</a></li></ul>
+            </div>
+    </aside>
+
+    <footer>
+        <div class="centralizar ajustar">
+            <a href="https://github.com/DesignerDjalma" target="_blank" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/djalma-ferreira-de-lima-filho-05a7b6187/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/3djhey/" target="_blank" class="fa fa-instagram"></a>
+        </div>
+        <div class="centralizar">
+            <p>Copyright ©2023 Djalma Filho</p>
+        </div>
+    </footer>
+</body>
+</html>
